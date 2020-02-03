@@ -1,0 +1,27 @@
+name: Build LaTeX document
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v1
+      - name: Compile LaTeX document
+        uses: dante-ev/latex-action@master
+        with:
+          root_file: Festkoerper_Skript.tex
+          
+          
+#           - name: LaTeX compilation
+#   uses: dante-ev/latex-action@v0.2.0
+#   with:
+#     # The root LaTeX file to be compiled
+#     root_file: 
+#     # The working directory for the latex compiler to be invoked
+#     working_directory: # optional
+#     # LaTeX engine to be used
+#     compiler: # optional, default is latexmk
+#     # Extra arguments to be passed to the latex compiler
+#     args: # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+#     # Install extra packages by apt-get
+#     extra_system_packages: # optional: 
