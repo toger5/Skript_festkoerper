@@ -10,6 +10,10 @@ jobs:
         uses: dante-ev/latex-action@master
         with:
           root_file: Festkoerper_Skript.tex
+      - uses: actions/upload-artifact@v1
+        with:
+          name: FestkoerperSkript
+          path: Festkoerper_Skript.pdf
           
           
 #           - name: LaTeX compilation
