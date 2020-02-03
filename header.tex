@@ -1,0 +1,134 @@
+%----------------------------------------------------------------%
+%--------------------------INFORMATIONEN-------------------------%
+%----------------------------------------------------------------%
+%	Infos gibt es zu jedem Paket auf www.ctan.org
+%	Werden bei den Paketen bestimmte Optionen gesetzt, so sind die Wichtigsten erklaert
+%	solange sie nicht selbsterklärend sind
+
+%----------------------------------------------------------------%
+%--------------------------GRUNDEINSTELLUNGEN--------------------%
+%----------------------------------------------------------------%
+\documentclass[oneside, ngerman]{scrartcl}
+%	'oneside'/'twoside': nicht zwischen linker und rechter Seite unterscheiden (alternativ twoside)
+%	'twocolumn': wuerde 2 Spalten auf dem Blatt platzieren
+%	'bibliography=totocnumbered': Normal nummeriertes Inhaltsverzeichnis (Kapitelnummer)
+%	'listof=totocnumbered': Abbildungs- und Tabellenverzeichnis normal nummeriert (Kapitelnummer)
+%	'ngerman' verwendet deutsch als Dokumentensprache (z.B. fuer Sirange)
+
+\usepackage[ngerman]{babel}							%	Einstellen der Sprache
+\usepackage[T1]{fontenc}							%	Wie wird Text ausgegeben, d.h. im PDF
+\usepackage[utf8]{inputenc}							%	Welche Zeichen 'versteht' LaTeX bei der Eingabe?
+\usepackage{lmodern}								%	Laedt Schriften, die geglaettet sind
+											
+\usepackage{blindtext}								%	Beispieltext, zum Testen geeignet
+\usepackage{subfigure}
+%----------------------------------------------------------------%
+%--------------------------SEITENLAYOUT--------------------------%
+%----------------------------------------------------------------%
+\usepackage[left=3cm,right=3cm]{geometry}			%	Paket, welches vielfaeltige Einstellungen zum Seitenlayout liefert
+
+%----------------------------------------------------------------%
+%--------------------------ABSTÄNDE------------------------------%
+%----------------------------------------------------------------%
+\usepackage[onehalfspacing]{setspace}				%	Für Zeilenabstaende: 'singlespacing' (einfach), 'onehalfspacing' (1.5-fach), 'doublespacing' (2fach)
+
+%\setlength{\parindent}{0cm}						%	Laengenangabe für die Einrueckung der ersten Zeile eines neuen Absatzes.
+%\setlength{\parskip}{6pt plus 3pt minus 3pt}		%	Laengenangabe für den Abstand zwischen zwei Absaetzen.
+%	Wenn diese beiden Befehle nicht kommentiert sind, wird ein Absatz nicht eingezogen sondern es gibt einen Abstand
+
+%----------------------------------------------------------------%
+%--------------------------MATHE---------------------------------%
+%----------------------------------------------------------------%
+\usepackage[]{mathtools}							%	Erweiterung von AMSMath, laedt automatisch AMSMath - für viele Mathe-Werkzeuge, 'fleqn' als Option ist für Mathe linksbuendig
+\usepackage{amsfonts}								%	Für eine Vielzahl an mathematischen Symbolen
+\usepackage{amsmath}
+\usepackage{amssymb}
+%----------------------------------------------------------------%
+%--------------------------KOPF- UND FUSSZEILEN------------------%
+%----------------------------------------------------------------%
+\usepackage[automark,headsepline=.4pt]{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\setkomafont{pageheadfoot}{\normalfont\bfseries}	%	Normale Schriftart und Fett für den Seitenkopf
+\addtokomafont{pagenumber}{\normalfont\bfseries}	%	Normale Schriftart und Fett für die Seitenzahl
+\clearscrheadfoot
+\rohead{\thepage}									%	Rechter Seitenkopf mit Seitenzahl, ungerade Seiten
+\lehead{\thepage}									%	Linker Seitenkopf mit Seitenzahl, gerade Seiten
+\lohead{\headmark}									%	Linker Seitenkopf mit section, ungerade Seiten
+\rehead{\headmark}									%	Linker Seitenkopf mit section, gerade Seiten
+\lefoot[\pagemark]{\empty}							%	Leere Fußzeile, ungerade Seiten
+\rofoot[\pagemark]{\empty}							%	Leere Fußzeile, gerade Seiten
+\setlength{\headheight}{1.1\baselineskip}			%	Hoehe der Kopfzeile definieren
+%	Definert man oben in der documentclass 'twoside', so wird zwischen geraden und ungeraden Seiten unterschieden
+
+%----------------------------------------------------------------%
+%--------------------------BILDER--------------------------------%
+%----------------------------------------------------------------%
+\usepackage{graphicx}									%	Um Bilder einbinden zu koennen 
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}		%	Um Farben verwenden zu koennen
+\usepackage{pdfpages}									%	pdfs importieren
+
+%----------------------------------------------------------------%
+%--------------------------POSITIONIERUNG------------------------%
+%----------------------------------------------------------------%
+\usepackage{float}
+
+%----------------------------------------------------------------%
+%--------------------------LISTEN--------------------------------%
+%----------------------------------------------------------------%
+\usepackage{enumitem}							%	Um Listen / Aufzaehlungen leichter zu modifizieren
+%\setlist{noitemsep}							%	Verringert den Abstand in Aufzaehlungen
+
+%----------------------------------------------------------------%
+%--------TABELLEN-/BILDUNTERSCHRIFTEN und NUMMERIERUNG-----------%
+%----------------------------------------------------------------%
+\usepackage[format=hang, indention=0mm, labelsep=colon, justification=justified,  labelfont=bf]{caption}
+\setlength\parindent{0pt}
+%	'format=hang': Platz unter Abb. X bleibt frei, 'format=plain': auch unter Abb. X befindet sich Text
+%	'idention': Einzug der zweiten Textzeile
+%	'labelsep=colon': Trenner zwischen Nr. und Text ist Doppelpunkt und Leerzeichen
+%	'justification=justified': Text wird als Block gesetzt
+%	'labelfont=bf': 'Abbildung X.X' wird fett geschrieben
+
+\numberwithin{equation}{section}				%	Nummerierung der Gleichungen, Tabellen und Bilder nach der Kapitelnummer
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+%----------------------------------------------------------------%
+%--------------------------LITERATURVERZEICHNIS------------------%
+%----------------------------------------------------------------%
+\usepackage[german]{babelbib}					%	Bereitstellung des deutschen Layouts fuer die Bibliography
+
+%----------------------------------------------------------------%
+%--------------------------SIUNITX-------------------------------%
+%----------------------------------------------------------------%
+\usepackage[]{siunitx}
+\sisetup{locale = DE}							%	Automatische Einstellung der Ausgabe für bestimmte Regionen (UK, US, DE, FR, ZA)
+
+%----------------------------------------------------------------%
+%--------------------------URLs / REFs---------------------------%
+%----------------------------------------------------------------%
+\usepackage[hidelinks]{hyperref}				%	Erweiterte Referenzierung ('hidelinks' verhindert Linien um Links)
+
+\usepackage{gensymb}
+\usepackage{subfigure}
+\usepackage{ textcomp }
+\usepackage{dsfont}
+\usepackage{siunitx}
+\usepackage{comment}
+\usepackage{tikz}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{svg}
+\usetikzlibrary{arrows.meta}
+%----------------------------------------------------------------%
+%--------------------------EIGENE BEFEHLE------------------------%
+%----------------------------------------------------------------%
+\renewcommand{\thesubsubsection}{(\alph{subsubsection})}
+\newcommand{\vk}{\textbf{k}}
+\newcommand{\dvk}{\Delta\textbf{k}}
+\newcommand{\dr}{\mathrm{d}r}
+
+%----------------------------------------------------------------%
+%--------------------------EIGENE Packages-----------------------%
+%----------------------------------------------------------------%
+\usepackage{color}

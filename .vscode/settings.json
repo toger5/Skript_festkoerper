@@ -1,0 +1,7 @@
+{
+	"latex-workshop.latex.autoClean.run": "onBuilt",
+	"latex-workshop.latex.outDir": "%DIR%/.out",
+	"markdown.styles": [
+		"markdown_style.css"
+	]
+}

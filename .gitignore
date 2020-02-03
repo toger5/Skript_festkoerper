@@ -275,4 +275,8 @@ TSWLatexianTemp*
 # Makeindex log files
 *.lpz
 
+# Nextcloud 
+*.db
+*.db-shm
+*.db-wal
 Festkoerper_Skript.tex
