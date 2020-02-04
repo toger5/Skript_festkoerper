@@ -176,7 +176,7 @@ Ann.: $T$ = \SI{0}{K}, $f(E(\textbf{k}),T) = \Theta(E_F^0 - E(\textbf{k}))$ mit 
             \begin{tabular}{c|c|c}
                 \textbf{Zusammenfassung:} & \textcolor{red}{Elektronen} & \textcolor{blue}{Löcher} \\ \hline \hline
                 Ladung & -e & e \\
-                eff. Masse & $m_e^* < 0$ & $m_h^* = - m_e > 0$ \\
+                eff. Masse & $m_e^* < 0$ & $m_h^* = - m_e^* > 0$ \\
                 Wellenvektor & $\textbf{k}_e$ & $\textbf{k}_h = - \textbf{k}_e$ \\
                 Energie & $E_e(\textbf{k}_e)$ & $E_h = - E_e(-\textbf{k}_e)$ \\
                 Geschwindigkeit & $\textbf{v}_e(\textbf{k}_e)$ & $ \textbf{v}_h = \textbf{v}_e (- \textbf{k}_e)$ \\
@@ -197,5 +197,78 @@ Ann.: $T$ = \SI{0}{K}, $f(E(\textbf{k}),T) = \Theta(E_F^0 - E(\textbf{k}))$ mit 
         \item[$\rightsquigarrow$] äußeres Feld \textbf{E} (oder \textbf{B}) 
         \item[$\rightsquigarrow$] Driftgeschwindigkeit $\textbf{v}_D = \textbf{v} - \textbf{v}_{th}$
     \end{itemize}
-    BGL: $m^* \frac{\mathrm{d} \textbf{v}}{\mathrm{d}t} = - e \textbf{E} - m^* \frac{\textbf{v}_D}{\tau}$
+    BGL: $$ m^* \frac{\mathrm{d} \textbf{v}}{\mathrm{d}t} = - e \textbf{E} - m^* \frac{\textbf{v}_D}{\tau}$$ mit Driftgeschwindigkeit $\textbf{v}_D$ und der mittleren Stoßzeit $\tau$. Für Elektronen im Metall ist $m = m^*$\\
+    Stationärer Zustand: $\frac{\mathrm{d} \textbf{v}}{\mathrm{d}t} = 0$
+    $$\textbf{v}_D = - \frac{e \tau}{m} \cdot \textbf{E} = - \mu \textbf{E}$$ mit Beweglichkeit:
+    \begin{center}
+        \fbox{$\mu := \frac{e \tau}{m}$}\\
+    \end{center}
+    Stromdichte:
+    \begin{align*}
+        \textbf{j} = -e \cdot n \cdot \textbf{v}_D = \frac{n e^2 \tau}{m} \cdot \textbf{E} = n \cdot e \cdot \mu \cdot \textbf{E}
+    \end{align*}
+    mit elektrischer Leitfähigkeit \fbox{$\sigma = \frac{n e^2 \tau}{m} = n e \mu$}\\
+    $\textbf{j} = \sigma \textbf{E}$ ist die mikroskopische Form des Ohmschen Gesetzes.\\
+    $\sigma$ durch Materialparameter bestimmt. Für typische Metalle: $n \sim 10^{30}$ m$^{-3}$, $\tau \sim 10^{-14}$ s, damit $\sigma \sim 10^8 \frac{1}{\Omega \text{m}}$.\\
+    z.B. bei 300 K:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{r l}
+            Ag: & $\sigma$ = \SI{6.1}{\cdot 10^7 (\Omega m)^{-1}}\\
+            Cu: & $\sigma$ = \SI{5.8}{\cdot 10^7 (\Omega m)^{-1}}\\
+            Au: & $\sigma$ = \SI{4.5}{\cdot 10^7 (\Omega m)^{-1}}
+        \end{tabular}
+    \end{table}
+
+    Erfolge des Drude-Modells:
+    \begin{itemize}
+        \item DC Leitfähigkeit (Ohmsches Gesetz, siehe oben), AC Leitfähigkeit ($\sigma = \frac{n e^2 \tau}{m} \cdot \frac{1}{1-i\omega \tau}$)
+        \item Hall-Effekt (B-Feld)
+        \item Wiedemann-Frantz-Gesetz:\\
+        Zusammenhang zwischen elektrischer und thermischer Leitfähigkeit $$\frac{K}{\sigma} = \frac{\pi^2}{3} \left(\frac{k_B}{e}\right)^2 \cdot T$$
+        $\rightsquigarrow$ gute elektrische Leiter $\leftrightarrow$ gute Wärmeleiter
+    \end{itemize}
+    Problem (?): Im Drude Modell werden alle Leitungselektronen beschleunigt \& gestreut. Widerspruch zu Fermi-Dirac-Verteilungsfunktion
+
+\item[(b)] \textbf{Sommerfeld Modell} ($\rightsquigarrow$ vgl. auch Kap. \ref{kap:5_1})
+\begin{itemize}
+    \item[Ann.:] Elektronen sind Quasiteilchen, quantenmechanische Teilchen $\rightarrow$ SGL, Pauli-Prinzip
+    \item[$\rightarrow$] einfache Metalle (Alkali- und Edelmetalle)
+    \item[$\rightarrow$] $\sim$ halb gefülltes Leitungsband
+    \item[$\rightarrow$] Fermi-Fläche ist $\approx$ Fermi-Kugel
+\end{itemize}
+BGL unter E-Feld:
+\begin{align*}
+    \hbar \dot{\textbf{k}} = \dot{\textbf{F}} = - e \textbf{E} \quad \rightarrow \quad \text{\fbox{$\delta k = - \frac{e \textbf{E} \delta t}{\hbar}$}}
+\end{align*}
+Interpretation:
+\begin{itemize}
+    \item Bei \textbf{E} = 0 ist die Fermi-Kugel um \textbf{k} = 0 zentriert.
+    \item Für \textbf{E} $\neq$ 0 verschiebt sich die gesamte Fermi-Kugel um $\delta$\textbf{k}.
+\end{itemize}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{figures/5_fkugel_verschiebung.png}
+%     \caption{}
+%     \label{fig:5_fkugel_verschiebung.png}
+% \end{figure}
+\begin{itemize}
+    \item Umverteilung von Elektronen von \textcolor{green}{///} nach \textcolor{blue}{///} durch Streuung
+    \item Stationärer Zustand: Verschiebung der Fermilänge durch Relaxationszeit $\tau$ gegeben.
+    \begin{center}
+        \fbox{$\delta \textbf{k} = \frac{-e \textbf{E} \tau}{\hbar}$}
+    \end{center}
+    \item $\delta k / k_F \approx 10^{-7}$, d.h. $f-f_0 \neq 0$ nur in der Nähe von $k_F$
+    \item Nur Elektronen in halbmondförmigen Bereichen tragen zur Leitfähigkeit bei.\\
+    Kein Widerspruch zum Drude-Modell, denn:
+    \begin{align*}
+        \textbf{j}_{D = Drude} &= - e \cdot n \cdot \textbf{v}_D = + \frac{e \tau \textbf{E}}{m} \cdot \frac{\hbar \textbf{k}_F}{\hbar \textbf{k}_F}\\
+        &= -e \cdot \tilde{n}\cdot \textbf{v}_F \qquad \text{mit} \quad \tilde{n} = n \cdot \frac{\delta \textbf{k}}{\textbf{k}_F}\\
+        &= \textbf{j}_{S = Sommerfeld}
+    \end{align*}
+    $\tilde{n}$ gilt als an der Verschiebung beteiligte Ladungsträgerdichte.
+\end{itemize}
+
+Erfolge des Sommerfeld-Modells: Leitfähigkeit, Wiedemann-Frantz-Gesetz
+
 \end{itemize}
