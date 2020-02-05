@@ -13,7 +13,7 @@ Stefan Florian Timo
 
 
 ## How to contribute:
-Es wird ein installiertes Latex environment benötigt (empfohlen ist VSCode, da sehr gute git integration...)
+Es wird ein installiertes Latex environment benötigt (empfohlen ist VSCode, da es eine sehr gute git integration bietet...)
   1. *git* installieren
   2. Projekt forken: \
   ![test](README/fork.png)
