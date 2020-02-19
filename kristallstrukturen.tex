@@ -1,9 +1,9 @@
 \section{Kristallstrukturen} \label{kap:2}
-Hier: idealen Kristallen, also unendlich Wiederholungen von identischen Strukturen (keine Oberfläche, Defekte, \dots)
+Hier: ideale Kristalle, also unendliche Wiederholungen von identischen Strukturen (keine Oberfläche, Defekte, \dots)
 \begin{itemize}
-    \item Bekante Atomsorte(n) und Bindgunsart: wohldefinierte Gleichgewichtslängen.
+    \item Bekannte Atomsorte(n) und Bindungsart: wohldefinierte Gleichgewichtslängen.
     \item Gesamtenergie des Kristalls ist minimal, wenn alle Bausteine genau dieselbe Umgebung vorfinden
-    \item \textbf{Struktur} Beschreibung als \textbf{Basis} (Strukturelement) + \textbf{Gitter} (Bauplan, Aneinanderziehung der Strukturelemente)
+    \item \textbf{Struktur} Beschreibung als \textbf{Basis} (Strukturelement) + \textbf{Gitter} (Bauplan, Aneinanderreihung der Strukturelemente)
           \begin{itemize}
               \item Basis: 1 Atom (Au), 2 Atome (Diamant, Si, NaCl, GaAs), \dots, 13 Atome (YBa$_2$Cu$_3$O$_7$), \dots $>10^4$ Atome in Proteinkristallen
               \item Gitter: In 3D nur 14 Bravais-Gitter
@@ -11,14 +11,15 @@ Hier: idealen Kristallen, also unendlich Wiederholungen von identischen Struktur
 \end{itemize}
 
 \subsection{Kristallgitter} \label{kap:2_1}
-\textbf{Def.:} Unendlich große, regelmäßige, periodische Anordnung von Raumpunkten. Es sieht immer gleich aus, unabhängig von welchem Gitterpunkt es betrachtet wird.\\
-Das Kristallgitter wird durch die \textbf{fundamentalen Gittervektoren} \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$} aufgespannt, d.h. jeder Gitterpunkt durch $\textbf{R} = n_1 \textbf{a}_1 + n_2 \textbf{a}_2 +n_3 \textbf{a}_3$ ($n_1$, $n_2$, $n_3$ ganzzahlig) beschrieben. Die Länge der fundamentalen Gittervektoren definieren die sog. \textbf{Gitterkonstante}.\\
+\textbf{Def.:} Unendlich große, regelmäßige, periodische Anordnung von Raumpunkten. Es sieht immer gleich aus, unabhängig von welchem Gitterpunkt aus es betrachtet wird.\\
+Das Kristallgitter wird durch die \textbf{fundamentalen Gittervektoren} \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$} aufgespannt, d.h. jeder Gitterpunkt durch $\textbf{R} = n_1 \textbf{a}_1 + n_2 \textbf{a}_2 +n_3 \textbf{a}_3$ ($n_1$, $n_2$, $n_3$ ganzzahlig) beschrieben. Die Länge der fundamentalen Gittervektoren definiert die sog. \textbf{Gitterkonstante}.\\
 \textbf{Primitive Gittervektoren} erreichen (bei vorgegebenem Ursprung) alle Gitterpunkte.\\
-Die (primitiven) GV \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$}, spannen Parallelepiped auf. Dieses stellt die (primitiven) \textbf{Elementarzelle} dar.\\
+Die (primitiven) GV \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$}, spannen ein Parallelepiped auf. Dieses stellt die (primitive) \textbf{Elementarzelle} dar.\\
+Die primitive Elementarzelle\\
 \begin{itemize}
-    \item Die primitive Elementarzelle enthält genau 1 Gitterpunkt und ist die kleinstmögliche Elementarzelle
-    \item Die primitive Elementarzelle ist nicht eindeutig definiert. Alle möglichen primitiven EZ haben dasselbe Volumen $V = \textbf{a}_1 (\textbf{a}_2 \times \textbf{a}_3)$ (Spatprudukt)
-    \item Die primitive EZ muss nicht zwingend die Symmetrie des Gitters widerspiegeln. Die kleinstmögliche EZ, die die volle Gittersymmetrie hat, ist die \textbf{konventionelle EZ} (vgl. Folie 3 rechts)
+    \item enthält genau 1 Gitterpunkt und ist die kleinstmögliche Elementarzelle
+    \item ist nicht eindeutig definiert. Alle möglichen primitiven EZ haben dasselbe Volumen $V = \textbf{a}_1 (\textbf{a}_2 \times \textbf{a}_3)$ (Spatprodukt)
+    \item muss nicht zwingend die Symmetrie des Gitters widerspiegeln. Die kleinstmögliche EZ, die die volle Gittersymmetrie hat, ist die \textbf{konventionelle EZ} (vgl. Folie 3 rechts)
 \end{itemize}
 \paragraph{Wigner-Seitz-Zelle}
 \begin{figure}[H]
@@ -29,7 +30,7 @@ Die (primitiven) GV \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$}, spannen Para
 \end{figure}
 \begin{itemize}
     \item primitive EZ, die die volle Symmetrie des Gitters wiederspiegelt
-    \item Sie erhält den Teil des Raumes um einen Gitterpunkt der diesen näher ist als die übrigen Gitterpunkte
+    \item enthält den Teil des Raumes um einen Gitterpunkt, der diesem näher ist als den übrigen Gitterpunkten
     \item Konstruktionsvorschrift:
           \begin{itemize}
               \item[1.] Verbindungslinien von Gitterpunkt zu Nachbarn (Folie 4, grün gestrichelt)
@@ -49,7 +50,7 @@ Die (primitiven) GV \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$}, spannen Para
           Kristallgitter ist invariant unter Transformation mit Translationsvektor $\textbf{T} = n_1 \textbf{a}_1 + n_2 \textbf{a}_2 +n_3 \textbf{a}_3$ ($n_1$, $n_2$, $n_3$ ganzzahlig)
           \begin{itemize}
               \item[$\rightarrow$] Für jeden Punkt \textbf{r} mit Umgebung $\mathcal{U} (\textbf{r})$: identische Umgebung am Ort \textbf{r} + \textbf{T}, also $\mathcal{U} (\textbf{r} + \textbf{T}) = \mathcal{U} (\textbf{r})$
-              \item[$\rightarrow$] Durch Translation der primitiven EZ lässt sich der Raum lückenlos und ohne Überöappauffüllen.
+              \item[$\rightarrow$] Durch Translation der primitiven EZ lässt sich der Raum lückenlos und ohne Überlapp auffüllen.
               \item[$\rightarrow$] Durch Translation um die primitiven GV lässt sich jeder Gitterpunkt erreichen.
           \end{itemize}
           {figure}\begin{figure}[H]
@@ -70,7 +71,7 @@ Die (primitiven) GV \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$}, spannen Para
                             Zähligkeit der Drehachsen & 1       & 2                & 3                & 4                & 6
                         \end{tabular}
                     \end{table}
-                    \textbf{NB:} Es gibt kein Kristallgitter mit Zähligkeit $>6$. Es gibt kein Kristallgittermit 5-zähliger Symmetrie. Diese ist kompatibel mit Translationssymmetrie. Quasikristalle haben 5-zählige Symmetrie, sind aber nicht periodisch.
+                    \textbf{NB:} Es gibt kein Kristallgitter mit Zähligkeit $>6$. Es gibt kein Kristallgitter mit 5-zähliger Symmetrie. Diese ist kompatibel mit Translationssymmetrie. Quasikristalle haben 5-zählige Symmetrie, sind aber nicht periodisch.
               \item[(ii)] \textbf{Spiegelung:} $x  \rightarrow  -x$, $y  \rightarrow y$, $z  \rightarrow  z$; Symbol: m
               \item[(iii)] \textbf{Inversion:} $x  \rightarrow  -x$, $y  \rightarrow -y$, $z  \rightarrow  -z$; Symbol: i oder 1\\
                     (Rotation um $\frac{2 \pi}{2} +$ Spiegelung an Ebene $\bot$ Drehachse)
@@ -94,7 +95,7 @@ Die (primitiven) GV \textbf{a$_1$}, \textbf{a$_2$}, \textbf{a$_3$}, spannen Para
                   kubisch & $a_1 = a_2 = a_3$ & $\alpha = \beta = \gamma = 90^{\circ}$ & 3 &  \\
                 \end{tabular}
             \end{table}
-            Im FK treten häufig kubische oder hexagonale Kristallsysteme auf. Grund: Atome (Bausteine) sind $\approx$ Kugelsymmetrisch, daher Hochsymmetrie bevorzugt.
+            Im FK treten häufig kubische oder hexagonale Kristallsysteme auf. Grund: Atome (Bausteine) sind $\approx$ kugelsymmetrisch, daher Hochsymmetrie bevorzugt.
             \item[(II)] \textbf{Bravais-Gitter:}\\
             Gitter-Raumgruppe, Symmetrie bzgl. Punkt- und Translationsoperationen.
             \begin{figure}[H]
@@ -114,7 +115,7 @@ Bisher: Nur Gitter. In 3D: 7 Kristallgitter (Gitter-Punktgruppen)\\
 14 Bravisgitter (Gitter-Punktgruppen)\\
 \begin{itemize}
     \item Beschreibung der Symmetrie Atomm $\rightarrow$ keine Änderung
-    \item i.A. Basis Komplizierter:\\
+    \item i.A. Basis komplizierter:\\
     z.B kubisch primitives Gitter:
     \begin{figure}[H]
         \centering
@@ -123,14 +124,14 @@ Bisher: Nur Gitter. In 3D: 7 Kristallgitter (Gitter-Punktgruppen)\\
         \label{}
     \end{figure}
 \end{itemize}
-Analyze der Symmetrie des Kristalls (Gitter + Basis)\\
+Analyse der Symmetrie des Kristalls (Gitter + Basis)\\
 32 Kristallklassen (Punktgruppen)\\
 230 Kristallophysische Raumgruppen (Raumgruppen)\\
 \subsection{Beispiele einfacher Kristallstrukturen}
 \label{kap:2_3}
 Hier: Kristallstrukturen, die besonders häufig auftreten.
 \begin{itemize}
-    \item chemische Elemente:\\
+    \item Chemische Elemente:\\
     kubisch flächenzentriert (fcc): 21\\
     kubisch raumzentriert (bcc): 16\\
     hexagonal (hcp: hexagonal close packed): 33\\
@@ -149,7 +150,7 @@ Hier: Kristallstrukturen, die besonders häufig auftreten.
     \caption{Vorlsungsfolie}
     \label{}
 \end{figure}
-\subsection{Indizierung von Kristllebenen und Richtungen}
+\subsection{Indizierung von Kristallebenen und Richtungen}
 \label{kap:2_4}
 \textbf{Def:} Kristallebene (Gitterebene, Netzebene)
 \begin{itemize}
@@ -162,11 +163,11 @@ Hier: Kristallstrukturen, die besonders häufig auftreten.
         \caption{}
         \label{}
     \end{figure}
-    \item Millerschen Indizes: Beziechnung von Kristallebenen Bestimmungsverfahren
+    \item Millerschen Indizes: Bezeichnung von Kristallebenen. Bestimmungsverfahren:
     \begin{itemize}
-        \item[(1)] Durchstoßpunkte in Einheriten der Gitterkonstante, z.B. 122
+        \item[(1)] Durchstoßpunkte in Einheiten der Gitterkonstante, z.B. 122
         \item[(2)] Kehrwert, z.B. $1, \frac{1}{2}, \frac{1}{2}$
-        \item[(3)]  Multiplicationen mit kleinstmöglicher Faktoren, der geanzen Zahlen liefert (hier: 2) führt auf Millerschen Indizes hkl, z.B. 211
+        \item[(3)] Multiplikationen mit kleinstmöglichem Faktor, der ganze Zahlen liefert (hier: 2) führt auf Millersche Indizes hkl, z.B. 211
     \end{itemize}
     \begin{itemize}
         \item Sonderfälle:\\
