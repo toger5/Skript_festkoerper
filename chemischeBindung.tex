@@ -15,18 +15,18 @@
 	Beispiel: $U_{pot}^{ij}(r_{ij})= \frac{-a}{r_{ig}^m}+\frac{b}{r_{ij}^n}$ mit $a,b,n,m > 0$ und $n>m$ \newline
 	Bindungsenergie:
 	\begin{align}
-		U_{Bindung} = \frac{1}{2}\sum_i\sum_{i\neq j}U_{pot}(r_0) = \frac{N}{2} \sum_{i\neq j} U_{pot}(r_0)
+		U_{Bindung} = \frac{1}{2}\sum_i\sum_{i\neq j}U^{ij}_{pot}(r_0) = \frac{N}{2} \sum_{i\neq j} U^{ij}_{pot}(r_0)
 	\end{align}
 	Abschätzung: Coulomb-WW von 2 Ionen $|q| = e$, und $r_0 = 1nm$
 	\begin{align}
-		U_{pot} \approx \frac{e^2}{4\pi\epsilon\cdot e_0}=\SI{1.4}{\electronvolt} \rightarrow U_{Bindungen} \approx U_{pot} N_A = \SI{140}{\kilo\joule\per\mole}
+		U_{pot} \approx \frac{e^2}{4\pi\epsilon\cdot e_0}=\SI{1.4}{\electronvolt} \rightarrow U_{Bindung} \approx U_{pot} N_A = \SI{140}{\kilo\joule\per\mole}
 	\end{align}
 
 \paragraph{Diskussion}
 	\begin{itemize}
 		\item[1)] attraktive WW: Art der Bindung, vgl. nächste Unterkapitel
 		\item[2)] repulsive WW: Atom-Wellenfunktionen dürfen sich nicht vollständig durchdringen, aufgrund des Pauli-Prinzips. phänomenologisch: $U_{rep}(r)\approx \frac{1}{r^{12}}$(also n=12)
-		\item[3)] NB: Alternative Ansätze: $\approx \frac{1}{r^2}$ mit $6<n<10$
+		\item[3)] NB: Alternative Ansätze: $\approx \frac{1}{r^2}$ mit $6<n<10$ oder $\approx e^{-r/\rho}$ mit $ \rho $ Reichweite des Potentials.
 	\end{itemize}
 
 \paragraph{Bindungstypen}
@@ -35,16 +35,16 @@
 		\item[I] \textbf{Van-Der-Waals Bindung:}\newline
 			abgeschlossene äußere Schale \newline
 			Dipol-WW, sehr schwach (0.1eV)\newline
-			zum Beispiel Edelgaskristall
+			z.B. Edelgaskristall
 		\item[II] \textbf{Ionenbindung:} \newline
 			Elektronentransfer $\rightarrow$ Edelgaskonfiguration \newline
 			Coulomb-WW, stark (10eV) \newline
-			zum Beispiel: NaCl
+			z.B. NaCl
 		\item[III] \textbf{Kovalente Bindung}:\newline
 			Überlapp der Elektronenhülle $\rightarrow$  Überlapp der Wellenfunktionen der Valenzelektronen\newline
 			$\rightarrow$ gerichtete Bindung \newline
 			Coulomb-WW, gerichtet, stark (10eV)\newline
-			zum Beispiel Diamant, Silizium
+			z.B. Diamant, Silizium
 			\begin{center}
 				\includegraphics{figures/1_1silizium.pdf}
 			\end{center}
@@ -52,7 +52,7 @@
 			Valenzelektronen komplett delokalisiert, es entsteht \glqq freies Elektronengas\grqq{}
 			um die Ionenrümpfe \\
 			Coulomb-WW, eher schwach (1eV)\\
-			zum Beispiel Na
+			z.B. Na
 		\item[V] \textbf{Wasserstoff-Brückenbindung}\newline
 			Bindung über ein H-Atom, das die Bindung vermittelt.\newline
 			Coulomb-WW, schwach
@@ -69,24 +69,24 @@
 		\item Bindung durch Fluktuationen dieser Ladungsteilungen um den Kern.
 		\item Klassische Beschreibung:
 			\begin{enumerate}
-				\item Verschiebung der Ladungsverteilung in Atomen 1 $\rightarrow$ Dipolmoment $p_1$
-				\item Dipol $p_1$ erzeugt elektrisches Feld $E_1$\newline
+				\item Verschiebung der Ladungsverteilung in Atomen 1 $\rightarrow$ Dipolmoment $\textbf{p}_1$
+				\item Dipol $\textbf{p}_1$ erzeugt elektrisches Feld $\textbf{E}_1$\newline
 						Atom 2 im Abstand $r$ von Atom 1:
 						\begin{align}
-							E_1(r)=\frac{1}{4\pi\epsilon_0}\left(3\frac{p_i r}{r^5}r-\frac{1}{r^3}p_1\right) \
-							E_1(r) \propto \frac{p_1}{r^3}
+							\textbf{E}_1(\textbf{r})&=\frac{1}{4\pi\epsilon_0}\left(3\frac{(\textbf{p}_1 \cdot \textbf{r})}{r^5}\textbf{r}-\frac{\textbf{p}_1}{r^3}\right) \\
+							 &\propto \frac{\textbf{p}_1}{r^3}
 						\end{align}
-				\item Atom 2 wird von $E_1$ auch polarisiert.
+				\item Atom 2 wird von $\textbf{E}_1$ auch polarisiert.
 						\begin{align}
-							P_2 \propto E_1(r) \text{mit Polarisierbarkeit}
-							p_2 \propto \frac{p_1}{r^3}
+							\textbf{p}_2 \propto \textbf{E}_1(\textbf{r}) \quad \text{mit Polarisierbarkeit} \quad
+							\textbf{p}_2 \propto \frac{\textbf{p}_1}{r^3}
 						\end{align}
 				\item Elektrisches Feld von Atom 2 am Ort von Atom 1:
 						\begin{align*}
-							E_2(r) = \frac{1}{4\pi\epsilon_0}\left(3\frac{P_2}{\vec{r}^5}\vec{r}-\frac{1}{\vec{r}^3}p_2\right)
+							\textbf{E}_2(\textbf{r}) = \frac{1}{4\pi\epsilon_0}\left(3\frac{(\textbf{p}_2 \cdot \textbf{r})}{r^5}\textbf{r}-\frac{1}{r^3}\textbf{p}_2\right)
 						\end{align*}
-				\item Gegenseitige Beeinflussung der Atome stört die kugelsymmetrische Ladungsteilungen, so dass $<p_1>^2 \neq 0$.
-				\item Wechselwirkung: $U_{pot}^{12}(r)= -p_2\cdot E_1(r)\propto - \frac{1}{r^6}$
+				\item Gegenseitige Beeinflussung der Atome stört die kugelsymmetrische Ladungsteilungen, so dass $<\textbf{p}_1>^2 \neq 0$.
+				\item Wechselwirkung: $U_{pot}^{12}(r)= -\textbf{p}_2\cdot \textbf{E}_1(\textbf{r})\propto - \frac{1}{r^6}$
 			\end{enumerate}
 	\end{itemize}
 	Damit: Paarpotential zweier Edelgasatome: \textbf{Lennard-Jones-Potential}
