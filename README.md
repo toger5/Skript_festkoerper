@@ -1,5 +1,4 @@
 # Festkörpervorlesung
-von Frau Prof. Weig
 
 ## About:
 Das Skript wurde während der Vorlesung mitgeschrieben (2019/2020). 
