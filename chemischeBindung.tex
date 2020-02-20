@@ -108,8 +108,8 @@
 		\centering
 		\begin{tabular}{l|llll}
 													& Ne & Ar & Kr  & Xe  \\ \hline
-			$U_{bidung}^{exp}$ in $\frac{meV}{Atom}$ & 20 & 81 & 116 & 166 \\
-			$U_{bidung}$                             & 26 & 89 & 127 & 174 \\
+			$U_{Bindung}^{exp}$ in meV/Atom & 20 & 81 & 116 & 166 \\
+			$U_{Bindung}$                             & 26 & 89 & 127 & 174 \\
 			Korrektur Nullpunktsfluktuation          & -8 & -9 & -7  & -6  \\
 			$\sum$                                   & 18 & 80 & 120 & 168
 		\end{tabular}
@@ -131,8 +131,8 @@
 			Abschätzung: 2 Ionen mit $q = \pm e$ im Abstand $a = 2.8$ \AA:\\ $U_{Coulomb} = -\frac{e^2}{4 \pi \varepsilon_0 a} = - 8.2 \cdot 10^{-19} \text{J} = -5.1 \text{eV}$
 	\end{itemize}
 
-	Coulomb-WW ist deutlich stärker als van-der-Waals-WW \\
-	(Auch Nullpunktsfunktionen können vernachlässigt werden)\\
+	Coulomb-WW ist deutlich stärker als Van-der-Waals-WW \\
+	(Auch Nullpunktsfluktuationen können vernachlässigt werden)\\
 	$\rightarrow$ WW im Kristall ist durch WW mit vielen Nachbarionen stärker als die Abschätzung.
 
 \paragraph{Bindungsenergie im Ionenkristall:}
@@ -141,7 +141,7 @@
 		\Phi_i  = \sum_{j \neq i} \left(\pm \frac{Z^2 e^2}{4 \pi \varepsilon_0 r_{ij}} + \frac{A}{r_{ij}^{12}}\right)
 	\end{align*}
 
-	Anm: Abstoßende WW ist kurzreichweitig, d.h. nur nächste Nachbarn im Abstand R. Die Zahl der Nächsten Nachbarn $n$ hängt von der Struktur ab.
+	Annahme: Abstoßende WW ist kurzreichweitig, d.h. nur nächste Nachbarn im Abstand R. Die Zahl der Nächsten Nachbarn $n$ hängt von der Struktur ab.
 	\begin{align*}
 		\Phi_i                                   & = \sum_{j \neq i} \left(\pm \frac{Z^2 e^2}{4 \pi \varepsilon_0 r_{ij}} + n\frac{A}{R^{12}}\right)
 		\qquad \text{mit } r_{ij} = p_{ij} \cdot R                                                                                                                 \\
@@ -236,7 +236,7 @@ Für kleinere Abstände R sei $\vert\Psi\rangle = c_1 \vert\Psi_a\rangle + c_2 \
 Damit:
 \begin{align*}
 	E &= \frac{\langle\Psi\vert\hat{H}\vert\Psi\rangle}{\langle\Psi\vert\Psi\rangle} = \frac{c_1^2 H_{aa} + c_2^2 H_{bb} + 2 c_1 c_2 H_{ab}}{c_1^2 + c_2^2 + 2 c_1 c_2 S}\\
-	\text{mit } H_{aa,bb} &= \langle\Psi_{a,b}\vert\hat{H}\Psi_{a,b}\vert\rangle\\  
+	\text{mit } H_{aa,bb} &= \langle\Psi_{a,b}\vert\hat{H}\vert\Psi_{a,b}\rangle\\  
 	H_{ab} &= \langle\Psi_a\vert\hat{H}\vert\Psi_a\rangle = H_{ba}
 \end{align*}
 Minimierung von $E$ bzgl. $c_1$ und $c_2$:
@@ -349,14 +349,14 @@ Diskussion:
 \label{kap:1_5}
 \begin{itemize}
 	\item[$\rightarrow$] Überlapp von elektronischen Wellenfunktionen, allerdings hier mit vielen Atomen
-	\item[$\rightarrow$] Es entsteht ein sogenanntes \textit{freies Elektronengas}, d.h. Valenzelektronen sind delokalisiert.
+	\item[$\rightarrow$] Es entsteht ein sogenanntes \textbf{freies Elektronengas}, d.h. Valenzelektronen sind delokalisiert.
 	\item[$\rightarrow$] Bindung ist ungerichtet und nicht so stark, wie die kovalente Bindung, wg. Abschirmung durch Rümpfe:
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{l|l|l|l|l}
 						 & Li   & Na   & Fe   & Co   \\
 						 \hline
-		$U_{Bidung}$(eV) & 1,63 & 1,11 & 4,28 & 4,39 \\    
+		$U_{Bindung}$(eV) & 1,63 & 1,11 & 4,28 & 4,39 \\    
 		\end{tabular}
 		\end{table}
 	\textbf{NB:} Übergangsmetalle (d-Elektronen)  haben kovalenten Anteil und daher stärkere Bindungsenergie.
@@ -368,8 +368,7 @@ Diskussion:
 
 \subsection{Wasserstoff-Brückenbindung} %1_6
 \label{kap:1_6}
-Bindung eines H-Atoms an 2 andere Atome, die nicht in \ref{kap:1_2}, \ref{kap:1_3}, \ref{kap:1_4}, \ref{kap:1_5}%TODO: make labels in the according kap's%
-passt.\\
+Bindung eines H-Atoms an 2 andere Atome, die nicht in \ref{kap:1_2}, \ref{kap:1_3}, \ref{kap:1_4}, \ref{kap:1_5} passt.\\
 $\rightarrow$ H: 1s$^1$ d.h Ionenbindung grundsätzlich möglich, aber $U_{Bindung}$ = 13.6 eV zu stark, genauso für metallische Bindung. Kovalente Bindung möglich. \\
 $\rightarrow$ Bindungspartner mit hoher Elektronegativität (z.B. O, N, F): H-Brücke.
 \begin{figure}[H]
@@ -378,7 +377,7 @@ $\rightarrow$ Bindungspartner mit hoher Elektronegativität (z.B. O, N, F): H-Br
 	\caption{Valenzelektron des H-Atoms geht fast vollständig auf Bindungspartner A über.\\
 	Effektive positive Ladung $\rightarrow$ Bindung an B.\\
 	Keine weiteren Bindungspartner aus räumlichen Gründen.}
-	$U_{Bindung pro Atom}$ = 0.1 eV (ähnlich wie VdW-Bindung)
+	$U_{Bindung / Atom}$ = 0.1 eV (ähnlich wie VdW-Bindung)
 	\label{}
 \end{figure}
 
