@@ -15,7 +15,7 @@
                     Elektronen mit $\lambda \approx$ 1 \AA ($h \nu$ = 150 eV)\\
                     Neutronen mit $\lambda \approx$ 1 \AA ($h \nu$ = 80 meV)\\
                     He-Atome mit $\lambda \approx$ 1 \AA ($h \nu$ = 20 meV)
-              \item Je nach Art der Welle unterschiedliche Eindringtiefe Röntegen- u. Neutronensteuung $\rightarrow$ massive FK, Elektronen - u. Atomstreuung eher für dünne Filme / Oberflächen.
+              \item Je nach Art der Welle unterschiedliche Eindringtiefe Röntgen- u. Neutronenstreuung $\rightarrow$ massive FK, Elektronen - u. Atomstreuung eher für dünne Filme / Oberflächen.
               \item Je nach Art der Welle Information über Elektronen- bzw. Kernverteilung. Beugungsmuster bei bekannten $\lambda$ liefert Informationen über periodische Anordnung des Kristalls.\\
                     Man unterscheidet
                     \begin{itemize}
@@ -32,16 +32,16 @@
 \subsection{Einführung in die Streutheorie} \label{kap:3_1}
 Grundannahmen: Klassische Beschreibung der Streuung, elastische Streuung, Einfachstreuung
 \begin{itemize}
-    \item Einlaufende Welle und auslaufende Welle sind eben Wellen (Guta Annahme, falls Quelle bzw. Beobachter weit entfernt)
+    \item Einlaufende Welle und auslaufende Welle sind ebene Wellen (Gute Annahme, falls Quelle bzw. Beobachter weit entfernt)
           \begin{figure}[H]
               \centering
               \includegraphics{figures/2_4Birne.pdf}
               \caption{}
               \label{}
           \end{figure}
-    \item Einlaufende welle mit Amplitude $A_P = A_0 e^{-i(\omega_0 t - \textbf{k} ( \textbf{L} + \textbf{r}))}$
+    \item Einlaufende Welle mit Amplitude $A_P = A_0 e^{-i(\omega_0 t - \textbf{k} ( \textbf{L} + \textbf{r}))}$
     \item Auftreffen auf Verteilung von Streuzentren mit komplexwertiger Streudichteverteilung $\rho(\textbf{r})$, die vom Ort und von Art der WW abhängt.
-    \item Jedes Streuzentrum (z.B. P) emittiert eine Kugelwelle, deren Amplitude und Phase relativ zur einlaufenden Welle con $\rho(\textbf{L} + \textbf{r})$ abhängt.
+    \item Jedes Streuzentrum (z.B. P) emittiert eine Kugelwelle, deren Amplitude und Phase relativ zur einlaufenden Welle von $\rho(\textbf{L} + \textbf{r})$ abhängt.
           \begin{align*}
               A_B^P                   & = A_P \cdot \rho(\textbf{L} + \textbf{r}) \frac{e^{i\textbf{k}' ( \textbf{L}' - \textbf{r})}}{|\textbf{L}' - \textbf{r}|}                                                                   \\
                                       & \approx \frac{A_0}{L'} e^{-i \omega_0 t} e^{i \textbf{k} \textbf{L}} e^{i \textbf{k}' \textbf{L}'} \rho(\textbf{L} + \textbf{r})  e^{i \textbf{k} \textbf{r}} e^{i \textbf{k}' \textbf{r}'}
@@ -62,12 +62,12 @@ Grundannahmen: Klassische Beschreibung der Streuung, elastische Streuung, Einfac
 
 
 \subsection{Das reziproke Gitter} \label{kap:3_2}
-Kristallstrukturen sind trasnlationsinvariant, somit ist
+Kristallstrukturen sind translationsinvariant, somit ist
 \begin{align*}
     \rho(\textbf{r}) = \delta(\textbf{r}+\textbf{R})
 \end{align*}
 mit Gittervektor $\Leftrightarrow \textbf{R} = n_1 \textbf{a}_1 + n_2 \textbf{a}_2 + n_3 \textbf{a}_3$.\\
-Damit Entwicklung im Fourrier-Reihe
+Damit Entwicklung in der Fourrier-Reihe
 \begin{align*}
     \rho(\textbf{r}) = \sum_{h,k,l}\rho_{hkl} e^{i \textbf{G}_{hkl}\cdot r}
 \end{align*}
@@ -76,7 +76,7 @@ mit
     \rho_{hkl} = \frac{1}{V_0}\int_{V_0}e^{i \textbf{G}_{hkl}\cdot r}d^3r
 \end{align*}
 
-$V_0$ Intergration über 1 Periode, d.h. primitive EZ.
+$V_0$ Integration über 1 Periode, d.h. primitive EZ.
 \begin{itemize}
     \item[(a)] \textbf{Reziprokes Gitter}\\
           Der Vektor $\textbf{G}_{hkl}$ kann durch Basisvektoren $\textbf{b}_1, \textbf{b}_2, \textbf{b}_3$ dargestellt werden
@@ -85,12 +85,12 @@ $V_0$ Intergration über 1 Periode, d.h. primitive EZ.
           \end{align*}
           \begin{itemize}
               \item $\textbf{G}_{hkl}$ sind Gittervektoren eines neuen Gitters, des \textbf{reziproken Gitters}
-              \item Translationsinvarianz im \textbf{realen Gitter (Ortsgiller)}:
+              \item Translationsinvarianz im \textbf{realen Gitter (Ortsgitter)}:
                     \begin{align*}
                         \rho(\textbf{r})  \overset{!}{=}  \rho(\textbf{r} + \textbf{R}) = \sum_{h,k,l} \rho_{hkl} e^{i \textbf{G}_{hkl} (\textbf{r}+\textbf{R})} \quad \Rightarrow \quad e^{i \textbf{G}_{hkl} \textbf{R}} \overset{!}{=} 1 \\
                         \Leftrightarrow \quad \textbf{G}_{hkl} \textbf{R} = 2 \pi m \quad (m \in \mathbb{Z})
                     \end{align*}
-                    Für belibige Koeffizienten $ \textbf{n}_1, \textbf{n}_2, \textbf{n}_3$ von $\textbf{R}$ und $h,k,l$ von $G_{hkl}$ dies nur  falls $\textbf{a}_i\cdot \textbf{b}_j > 2\pi \delta_{ij} (i,j = 1,2,3)$
+                    Für beliebige Koeffizienten $ \textbf{n}_1, \textbf{n}_2, \textbf{n}_3$ von $\textbf{R}$ und $h,k,l$ von $G_{hkl}$ gilt dies nur  falls $\textbf{a}_i\cdot \textbf{b}_j > 2\pi \delta_{ij} (i,j = 1,2,3)$
                 \item[$\rightsquigarrow$] Damit lauten die Basisvektoren des reziproken Gitters:
                 \begin{align*}
                     \textbf{b}_1 &= \frac{2 \pi}{V_0} ( \textbf{a}_2 \times \textbf{a}_3)\\
@@ -106,15 +106,15 @@ $V_0$ Intergration über 1 Periode, d.h. primitive EZ.
           \begin{itemize}
               \item Jedem rez. GV $\textbf{G}_{hkl}$ ist ein Fourier-Koeffizient $\rho_{hkl}$ eindeutig zugeordnet
               \item Reziproke Gittervektoren haben Dimension 1/Länge, daher Bezeichnung \textit{reziprokes Gitter}.
-              \item Reziproke Gittervektoren existieren nicht im Ortsraum, sondern im reziproken Raum. (Fourierraum,b-Raum, Impulsraum wegen $\textbf{p}= \hbar \textbf{k}$)
+              \item Reziproke Gittervektoren existieren nicht im Ortsraum, sondern im reziproken Raum. (Fourierraum, b-Raum,  Impulsraum wegen $\textbf{p}= \hbar \textbf{k}$)
           \end{itemize}
           \begin{table}[htbp]
               \centering
               \caption{Beispiele}
               \begin{tabular}{ccc}
                   \hline
-                  Beispiele & Real                & Reziprokes                                                            \\ \hline
-                  1D        & o-o-o (distanz = a) & o-o-o  (distanz $= b \frac{2\pi}{a}$)                                 \\
+                  Beispiele & Real                & Reziprok                                                            \\ \hline
+                  1D        & o-o-o (Distanz = a) & o-o-o  (Distanz $= b \frac{2\pi}{a}$)                                 \\
                   2D        & vgl Folie \#4       & $\textbf{b}_1 \bot \textbf{a}_2$ und $\textbf{b}_2 \bot \textbf{a}_1$ \\
                   3D        & SC mit a            & SC mit $b=\frac{2\pi}{a}$                                             \\
                             & bcc                 & fcc                                                                   \\
@@ -142,7 +142,7 @@ $V_0$ Intergration über 1 Periode, d.h. primitive EZ.
           \end{itemize}
 
     \item[(b)] \textbf{Brillouin-Zonen}\\
-          Analog zu den Gitter lässt sich auch in res. Gitter die   Wigno-Seitz-Zelle konstruieren. Sie wird als 1. Bernoulli Zelle bezeichnet, und ist entscheidend für Eigenschaften von Festkörpern.\\
+          Analog zu den Gittern lässt sich auch in rez. Gittern die   Wigner-Seitz-Zelle konstruieren. Sie wird als 1. Brillouin-Zone bezeichnet, und ist entscheidend für Eigenschaften von Festkörpern.\\
           Durch Erweiterung des Konstruktionsprinzips auf weiter entfernte rez. Gitterpunkte lassen sich \textbf{BZ höherer Ordnungen} definieren.
           \begin{center}
               \includegraphics{figures/3_2_1D.pdf}
@@ -156,8 +156,8 @@ $V_0$ Intergration über 1 Periode, d.h. primitive EZ.
           Rechtecksgitter:
           \begin{itemize}
               \item[1. BZ:] Rechteck
-              \item[2. BZ:] 4 Teilflächen, die sich durch Verschiebung um \textbf{rez. Gitterverktoren} zu Rechteck der 1. BZ Zusammensetzen lassen.
-              \item[3. BZ:] (und höhere) Je höher die Ordnung der BZ, desto mehr/komplizierte Teilflächen. Durch Verschiebungum rez. GV $\Rightarrow$ Rückführung auf 1. BZ
+              \item[2. BZ:] 4 Teilflächen, die sich durch Verschiebung um \textbf{rez. Gitterverktoren} zu Rechteck der 1. BZ zusammensetzen lassen.
+              \item[3. BZ:] (und höhere) Je höher die Ordnung der BZ, desto mehr/kompliziertere Teilflächen. Durch Verschiebung um rez. GV $\Rightarrow$ Rückführung auf 1. BZ
           \end{itemize}
           \begin{figure}[H]
               \centering
@@ -169,8 +169,8 @@ $V_0$ Intergration über 1 Periode, d.h. primitive EZ.
           \textbf{Diskussion:}
           \begin{itemize}
               \item 1. BZ ist Wigner-Seitz-Zelle des rez. Raums
-              \item Durch periodischs Aneinanderreihen der 1. BZ lässt sich der reziproke Raum vollständig auffüllen.
-              \item Punkt hoher Symmetrie werden Symbole ($\rightsquigarrow$ Gruppentheorie) zugeordnet, z.B. $\Gamma$-Punkt: Zentrum der 1. BZ, X-Punkt: Schnittpunkt der 1. BZ mit x.Achse
+              \item Durch periodisches Aneinanderreihen der 1. BZ lässt sich der reziproke Raum vollständig auffüllen.
+              \item Punkten hoher Symmetrie werden Symbole ($\rightsquigarrow$ Gruppentheorie) zugeordnet, z.B. $\Gamma$-Punkt: Zentrum der 1. BZ, X-Punkt: Schnittpunkt der 1. BZ mit x.Achse
           \end{itemize}
     \item[(c)] \textbf{Miller-Indizes}
           Zwischen den Miller-Indizes zur Bezeichnung von Gitterelementen des realen Gitters und dem reziproken Gitter besteht ein direkter Zusammenhang:\\
@@ -198,7 +198,7 @@ Streuintensität:
 \end{align*}
 mit Streuvektron $\Delta \textbf{k} = \textbf{k}_2-\textbf{k}_1$
 \begin{itemize}
-    \item Vorfaktoren sind zunächst nicht von Bedeutung, da Abhängigkeit von $I$ con$\Delta \textbf{k}$ untersucht
+    \item Vorfaktoren sind zunächst nicht von Bedeutung, da Abhängigkeit von $I$ von $\Delta \textbf{k}$ untersucht
     \item Vorsicht: In der Literatur werden manchmal $A_B$ und $\mathcal{A}$ als Streuamplitude bezeichnet.
 \end{itemize}
 Mit Kap. \ref{kap:3_2}:
@@ -207,7 +207,7 @@ Mit Kap. \ref{kap:3_2}:
 \end{align*}
 
 \begin{itemize}
-    \item[$\rightarrow$] Im allgemeinen Fall $\Delta \textbf{k} \neq \textbf{G}$:$e$-Funktion hat kompexe Exponenten und oszilliert. Bei großem V (d.h. größer als Oszillationsperiode $\left(1 /(\textbf{k}\cdot \textbf{G})\right)^3$) mitteln sich die Beträge weg.\\
+    \item[$\rightarrow$] Im allgemeinen Fall $\Delta \textbf{k} \neq \textbf{G}$: $e$-Funktion hat komplexe Exponenten und oszilliert. Bei großem V (d.h. größer als Oszillationsperiode $\left(1 /(\textbf{k}\cdot \textbf{G})\right)^3$) mitteln sich die Beträge weg.\\
     Physikalisch: Streubeiträge der einzelnen Atome interferieren destruktiv.
     \item[$\rightarrow$] Spezialfall $\Delta \textbf{k} = \textbf{G}$: e-Funktion hat den Wert 1.\\
     Physikalisch: Beiträge der einzelnen interferieren konstruktiv.
@@ -222,27 +222,27 @@ Mit Kap. \ref{kap:3_2}:
 \begin{itemize}
     \item Streuung am Kristall: Streusignal $\neq 0$ nur, wenn Bedingung $\Delta \textbf{k} = \textbf{G}$ erfüllt. (Von Laue Bedingung)
     \item Bei realen Kristallen endliches V, endliche Eindringtiefe der Bedingung\dots
-    \item Bei fester Lage der Probe (Kristalls) tritt in den meisten Richtungen keine Streuung auf. Bei Beugungsexperimente muß Kristallorientirung so lange gedreht werden, bis $\Delta \textbf{k} = \textbf{G}$, also ein Streusignal (Beugungsreflex) auftritt.
+    \item Bei fester Lage der Probe (Kristalls) tritt in den meisten Richtungen keine Streuung auf. Bei Beugungsexperimenten muß Kristallorientierung so lange gedreht werden, bis $\Delta \textbf{k} = \textbf{G}$, also ein Streusignal (Beugungsreflex) auftritt.
     \item Warum $\sim V^2$?\\
-    $|\mathcal{A}(\Delta \textbf{k})|^2$ entspricht Intensität im Maximum des Beugungsreflexes Endliches V führt zu Verbreiterung $\sim V$\\
-    Intergrierte Intensität des Beugungsreflexes $\sim \frac{V^2}{V} = V \sim$ Anzahl der Streuzentren.\\
+    $|\mathcal{A}(\Delta \textbf{k})|^2$ entspricht Intensität im Maximum des Beugungsreflexes. Endliches V führt zu Verbreiterung $\sim V$\\
+    Integrierte Intensität des Beugungsreflexes $\sim \frac{V^2}{V} = V \sim$ Anzahl der Streuzentren.\\
     Auch Eindringtiefe trägt zu Verbreiterung bei. Z.B. Röntgenstrahlung: $10^{-5}-10^{-3}$ pro Netzebene.
 \end{itemize}
 
 \begin{itemize}
-    \item[(a)] Ewald-Kugel und Bragg Bedingung\\
+    \item[(a)] Ewald-Kugel und Bragg-Bedingung\\
     \textbf{Ewald Konstruktion:}
     \begin{itemize}
         \item[(1)] Zeichne reziproke Gitter, wähle Gitterpunkt
         \item[(2)] Einzeichnen von einfallendem Wellenvektor als \textbf{-k} von diesem
         \item[(3)] Endpunkt von $-\vk$ (Anfang von \textbf{k}) sei Mittelpunkt der \textbf{Ewald-Kugel} (2D: Ewald-Kreis) mit Radius k.
-        \item[(4)] Für rez. Gitterpunkte, die auf dieser Kugel liegen, ist von Laue Bedinugn $\dvk = \vk' - \vk \overset{!}{=} \textbf{G}$ erfüllt. Der gebeugte Strahl tritt dann mit Wellenvektro $\vk' = \vk + \textbf{G}$ aus. In dieser Richtung tritt Beugungsreflex auf.
+        \item[(4)] Für rez. Gitterpunkte, die auf dieser Kugel liegen, ist von Laue-Bedingung $\dvk = \vk' - \vk \overset{!}{=} \textbf{G}$ erfüllt. Der gebeugte Strahl tritt dann mit Wellenvektor $\vk' = \vk + \textbf{G}$ aus. In dieser Richtung tritt Beugungsreflex auf.
         \item[(5)] Verschmierung der reziproken Gitterpunkte $\rightarrow$ endliches Probenvolumen.
     \end{itemize}
     \textbf{Diskussion:}\\
-    Durch expt. Anordnung des Beugungsexperiments und ORientierung der Probe liegt $\dvk$ bzgl. des reziproke Gitters fest.\\
+    Durch expt. Anordnung des Beugungsexperiments und Orientierung der Probe liegt $\dvk$ bzgl. des reziproke Gitters fest.\\
     $\rightarrow$ Beugungsreflex $\rightarrow \textbf{G}_{hkl} \rightarrow \rho_{hkl} \rightarrow \textbf{G}_{hkl} \bot (hkl)$\\
-    d.h. Beugungsreflex resultiert aud Streuung an Netzebenenschar, also periodischen Streudichtevariation mit Periode $d_{hkl}$. Zusammenhang von Laue Bedingung und Bragg-Bedingugn Betrachte Steuung als Funktion des Winkel $\Theta$ zwsche $\vk$ und (hkl).
+    d.h. Beugungsreflex resultiert aus Streuung an Netzebenenschar, also periodischen Streudichtevariation mit Periode $d_{hkl}$. Zusammenhang von Laue-Bedingung und Bragg-Bedingung. Betrachte Steuung als Funktion des Winkel $\Theta$ zwischen $\vk$ und (hkl).
     \begin{figure}[H]
         \centering
         \includegraphics{figures/3_3Reflection.pdf}
@@ -265,7 +265,7 @@ Mit Kap. \ref{kap:3_2}:
             \item[$\rightarrow$] Stärke des Beugungsreflexes
         \end{itemize}
     \end{itemize}
-    Aufteilung der Streudichteverteilung af Basisatome:
+    Aufteilung der Streudichteverteilung auf Basisatome:
     \begin{align*}
         \textbf{r} = \textbf{R}_n + \textbf{r}_\alpha + \textbf{r}'
     \end{align*}
@@ -279,14 +279,14 @@ Mit Kap. \ref{kap:3_2}:
     \end{itemize}
     \begin{itemize}
         \item Röntgenbeugung: Schalenelektronen
-        \item Neutronenbeugung: Kernen
+        \item Neutronenbeugung: Kerne
     \end{itemize}
     \begin{align*}
         \Rightarrow \qquad \rho_{hkl} = \frac{1}{V_0} \sum_{\alpha} e^{-i \textbf{G} \textbf{r}_{\alpha}} \underbrace{\int_{V_{\alpha}} \rho_{\alpha} (\textbf{r}') e^{-i \textbf{G} \textbf{r}'} \mathrm{d}^3r'}_{=: f_{\alpha} (\textbf{G})\text{ Atom-Formfaktor ($\rightarrow c$)}}  = \frac{1}{V_0} \underbrace{\sum_{\alpha} e^{-i \textbf{G} \textbf{r}_{\alpha}} f_{\alpha} (\textbf{G})}_{=: S_{hkl}}
     \end{align*}
     $\text{Strukturfaktor:} \qquad S_{hkl} = \sum_{\alpha} e^{-i \textbf{G} \textbf{r}_{\alpha}} f_{\alpha} (\textbf{G})$
         \begin{itemize}
-        \item[$\rightarrow$] Beschreibt Einfluss der Interferenz der Basisatome auf dei Streuverteilung.
+        \item[$\rightarrow$] Beschreibt Einfluss der Interferenz der Basisatome auf die Streuverteilung.
         \begin{align*}
             S_{hkl} = \sum_\alpha f_\alpha e^{-2\pi i (hu_\alpha+kv_\alpha+lw_\alpha)}
         \end{align*}
@@ -301,7 +301,7 @@ Mit Kap. \ref{kap:3_2}:
                 \end{cases}
             \end{align*}
 
-            \item[(iii)] bcc Giter (einfache Basis): \textbf{r}$_1 = \left(\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right)$, \textbf{r}$_2 = \left(\begin{array}{c} 1/2 \\ 1/2 \\ 1/2 \end{array}\right)$
+            \item[(iii)] bcc Gitter (einfache Basis): \textbf{r}$_1 = \left(\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right)$, \textbf{r}$_2 = \left(\begin{array}{c} 1/2 \\ 1/2 \\ 1/2 \end{array}\right)$
             \begin{align*}
                 S_{hkl} = \begin{cases}
                     2f & \text{für $h+k+l$ gerade}\\
@@ -310,8 +310,8 @@ Mit Kap. \ref{kap:3_2}:
             \end{align*}
 
             \item[\textbf{Diskussion}]
-            Im bcc Gitter (und in anderen zentrierten Gittern) Kommte es zur systematischen Anslöschung von Beugungsreflexen.\\
-            Ursache: Destruktive Interferenz der Netzebene durch das im Ursprung liegende Atom und das Zentrierte Atom.
+            Im bcc Gitter (und in anderen zentrierten Gittern) kommt es zur systematischen Auslöschung von Beugungsreflexen.\\
+            Ursache: Destruktive Interferenz der Netzebene durch das im Ursprung liegende Atom und das zentrierte Atom.
             \item[\textbf{Beispiel}(100)] (Beugungsreflex)
                 \begin{figure}[H]
                     \centering
@@ -328,13 +328,13 @@ Mit Kap. \ref{kap:3_2}:
     $\rightarrow$ Art der Wechselwirkung zwischen Welle und Atom.
     \begin{itemize}
         \item[(i)] \textbf{Neutronenstreuung}\\
-        Streuung am Kern, Punktförmig, $\Delta \textbf{k} \cdot \textbf{r} \ll 1$
+        Streuung am Kern, punktförmig, $\Delta \textbf{k} \cdot \textbf{r} \ll 1$
         \begin{align*}
             f_{\alpha} (\Delta \textbf{k}) = \int_{v_{\alpha}} \rho_{\alpha} (\textbf{r}') \mathrm{d}^3r' = -b
         \end{align*}
         -: Konvention, gemessen wird $|b|^2$\\
         $b$: Streulänge
-        \item[(ii)] \textbf{Röngensteruung}
+        \item[(ii)] \textbf{Röngenstreuung}\\
         Streuung an Elektronenhühlle $\sim a \sim \lambda$
         Annahme: kugelsymmetrische Ladungsdichteverteilung:
         \begin{align}
@@ -375,7 +375,7 @@ Mit Kap. \ref{kap:3_2}:
         \item[(i)] \underline{Drehkristallverfahren:}\\
         Voraussetzung - Einkristall; - monochromatische Strahlung (festes $\lambda$)\\
         Messprinzip: Voraussetzung $\Delta \textbf{k} = \textbf{G}$ ist bei gegebenem $\Delta \textbf{k}$ in der Regel nicht erfüllt. Drehung des Kristalls um eine Achse. Für bestimmte Winkel ist Streubedingung für bestimmte Netzebenenschar erfüllt.\\
-        Nach Möglichkeit Drehachse = Symmetische Achse de Kristalls, z.B. $\textbf{a}_3$
+        Nach Möglichkeit Drehachse = Symmetrische Achse des Kristalls, z.B. $\textbf{a}_3$
         \begin{itemize}
             \item[$\rightarrow$] Netzebenen $||$ Drehachse: \textbf{G}$_{nk0}$ (l=0)\\
             Streuung in xy Ebene, Reflexe falls $\Delta k$ = $G_{hk0}$
@@ -399,10 +399,10 @@ Mit Kap. \ref{kap:3_2}:
 		\end{figure}
 		\item[iii)] Laue-Verfahren:
 		Einkristall, Kontinuumsstrahlung ('alle' $\lambda$) Messprinzip: $\Delta \textbf{k} = \textbf{G}_{hkl}$ wird durch den zu (hkl) passenden Wellenvektor \textbf{k} erfüllt ($|k| = \frac{2\pi}{\lambda}$) $\rightarrow$ Punktmuster aus Beugungsreflexen. \\
-		$\rightarrow$ EInstrahlung längs Symmetrierichtung läuft Beugunsbild, welches die Symmetrie diese Achse widerspiegelt $\rightarrow$ Orientierung von Proben.
+		$\rightarrow$ Einstrahlung längs Symmetrierichtung läuft Beugungsbild, welches die Symmetrie diese Achse widerspiegelt $\rightarrow$ Orientierung von Proben.
 	\end{itemize}
 	\item[(b)] \textbf{Praktische Aspekte}\\
-	Allgemiener Aufbau:
+	Allgemeiner Aufbau:
 	\begin{itemize}
 		\item Quelle
 		\item Monochromator (falls erforderlich)
