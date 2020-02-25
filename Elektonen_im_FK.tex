@@ -4,7 +4,7 @@ Erinnerung adiabatische Näherung (Born-Oppenheimer-Näherung):\\
 Elektronenbeugung und Gitterdynamik werden getrennt behandelt.
 \begin{itemize}
     \item Bewegung der Valenzelektronen im \textbf{statischen} Potential des Gitters. (positiv geladene Ionenrümpfe)
-    \item Bei Transportprozessen von Elektronen von Elektronen:
+    \item Bei Transportprozessen von Elektronen:
     Elektronen-Gitter-WW als Strömung betrachtet.
 \end{itemize}
 
@@ -30,7 +30,7 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
         \label{5_1Graph}
     \end{figure}
     \item Beschreibung der Elektronen im Festkörper als \textbf{freies Elektronengas}
-    \item Potentialtopf begrenzt durch Festkörper. Oberer Rand entspricht Vakuumzustnad (im Folgenden als $\infty$ angenommen)
+    \item Potentialtopf begrenzt durch Festkörper. Oberer Rand entspricht Vakuumzustand (im Folgenden als $\infty$ angenommen)
     \item Gute Näherung für \glqq einfache Metalle\grqq (Alkalimetalle, Münzmetalle)
     \item Keine gute Näherung für die Übergangsmetalle
 \end{itemize}
@@ -48,17 +48,17 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
             \end{cases}
         \end{align*}
         Ansatz: Ebene Wellen $ \Psi(\textbf{r}) = \frac{1}{\sqrt{V}} e^{i\textbf{kr}}$  \\
-        Energieeigentwert des Grundzustandes:
+        Energieeigenwert des Grundzustandes:
         \begin{align}
             E = \frac{\hbar^2k^2}{2m} = \frac{\hbar^2}{2m}(k_x^2 + k_y^2 + k_z^2)
         \end{align}
         Periodische Randbedingungen:\\ $\Psi(x,y,z) = \Psi(x+L,y,z) = \Psi(x,y+L,z) = \Psi(x,y,z+L)$ \\
         $\rightarrow$ $k_i = \frac{2\pi}{L} \cdot m_i $ mit $m_i$ für $i =x,y,z$ ganzzahlig. \\
         diskret aber \glqq liegen dicht \grqq d.h. quasikontinuierlich für große L. \\
-        Für niedrigdimensionale Festkörper wird Schrödingergleichung mit Ansatz ebener Wellen für \glqq vorhandene Dimension \grqq und als stehene Welle für \glqq nicht vorhandene \grqq Dimension mit Wellenlänge $ \lambda_i = \frac{2d}{i} $. ($d$ : Abmessung in nicht vorhandener Dimension) \\
+        Für niedrigdimensionale Festkörper wird Schrödingergleichung mit Ansatz ebener Wellen für \glqq vorhandene Dimension\grqq  und als stehene Welle für \glqq nicht vorhandene Dimension \grqq  mit Wellenlänge $ \lambda_i = \frac{2d}{i} $. ($d$ : Abmessung in nicht vorhandener Dimension) \\
         
     \textbf{2D Zweidimensionales Elektronengas:} \\
-    Z.B. dünne Metallfaden, 2DEG im Halbleiter-Heterostrah (Si-integrierte Schaltung) mit Dicke $d$
+        Z.B. dünne Metallfaden, 2DEG im Halbleiter-Heterostrah (Si-integrierte Schaltung) mit Dicke $d$
     \begin{align*}
         \lambda_i = \frac{2d}{i} \text{ oder } k_{i,z} = \frac{2\pi}{\lambda_i} = \frac{\pi}{d}i
     \end{align*}
@@ -84,7 +84,7 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
     \begin{figure}[]
         \centering
         \includegraphics[]{figures/5_1Balken_Gitter.pdf}
-        \caption{Die Dichte der erlaubten Wellenvektopren im k-Raum}
+        \caption{Die Dichte der erlaubten Wellenvektoren im k-Raum}
         \label{}
     \end{figure}
     \begin{itemize}
@@ -93,7 +93,7 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
         \item 1D: $\delta^{1D}(k) = \frac{L}{(2\pi)^1}$
     \end{itemize}
     \item[(b)] \textbf{Zustandsdichte} \\
-        Zustandsdichte im Impulsraus: \\
+        Zustandsdichte im Impulsraum: \\
         Die Dichte der erlaubten Wellenvektoren im k-Raum:
         \begin{align}
             3D \text{ : } \rho(k) &= \frac{1}{\left(\frac{2\pi}{L}\right)^3} &&= \frac{V}{(2\pi)^3} \\
@@ -132,7 +132,7 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
     \item[(c)] \textbf{Fermi-Energie}
     \begin{itemize}
         \item Betrachte System aus N nicht-ww Sl???????
-        \item Füll Zustände aus (b) auf unter Beachtung des Pauliprinzips mit der Verteilunsfunktion $f(E,T)$, so dass gilt
+        \item Fülle Zustände aus (b) auf unter Beachtung des Pauliprinzips mit der Verteilunsfunktion $f(E,T)$, so dass gilt
         \begin{align}
             N = \int_0^\infty D(t) \cdot f(E,T) dE
             \label{eq:5_1_1}
@@ -183,13 +183,13 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
             \end{tabular}
          \end{table}
     \end{itemize}
-    \item[(ii)] \textbf{Elektronenegas bei endlicher Temperatur}
+    \item[(ii)] \textbf{Elektronengas bei endlicher Temperatur}
     \begin{align}
         f(E,T) = \frac{1}{e^{\frac{E-\mu}{K_B T}}}
     \end{align} 
     \begin{itemize}
         \item Energieintervall, in dem Umsetzungen möglich sind $\pm 1.75 k_B T$\\
-            Da $k_B T_{TR} \approx 25 meV \ll E_F^0 $ ist Tieftemperaturnäherung of gerechtfertigt für Metalle.
+            Da $k_B T_{TR} \approx 25 meV \ll E_F^0 $ ist Tieftemperaturnäherung oft gerechtfertigt für Metalle.
         \item Für $T=0$ ist $\mu(T=0) = E_F^0$ 
         \item Mit N $\overset{!}{=} \int_0^{\infty} D(E) f(E,T) \mathrm{d}E \, \rightarrow \, \mu(T) \approx E_F^0 \left[1-\frac{\pi^2}{12} \left(\frac{T}{T_F}\right)^2 \right]$\\
             Für RT gilt in guter Näherung $\mu(300K) \approx E_F^0 = E_F$
@@ -235,7 +235,7 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
                     C_v &= \int_0^\infty (E - E_F) D(E) \frac{\partial f(E,T)}{\partial T} \mathrm{d}E \\
                     &\approx D(E_F) \int_0^\infty (E - E_F) \frac{\partial f(E,T)}{\partial T} \mathrm{d}E
                 \end{align}
-                Wobei in der Abschätzung ausgenutzt wurde, dass $\partial f/\partial T \neq 0 $ nur um $E_F$. Mit
+                Wobei in der Abschätzung ausgenutzt wurde, dass $\partial f/\partial T \neq 0 $ nur um $E_F$ gilt. Mit
                 \begin{align}
                     \frac{\partial f(E,T)}{\partial T} = \frac{E-E_F}{k_B T^2} \frac{e^{\frac{E-E_F}{k_BT}}}{\left(e^{\frac{E-E_F}{k_BT}} + 1\right)^2}
                 \end{align}
@@ -254,7 +254,7 @@ Zunächst zusätzliche Vernachlässigung der Gitterperiodizität
 mit $\gamma := \frac{\pi^2}{2}N k_B \frac{1}{T_F}$, $\beta = \frac{12 \pi^4}{5} N k_B \frac{1}{\Theta_D^3}$.\\
 
 \textbf{Diskussion:} \\
-Für tiefe Temperaturen $(T \ll \Theta_D)$: Beitrag des Gitters recht kleine, da $T^3$-Abhängigkeit. $\rightarrow$ Anteil der Elektronen messbar (siehe Folie) wegen schwächerer T-Abhängigkeit. \\
+Für tiefe Temperaturen $(T \ll \Theta_D)$: Beitrag des Gitters recht klein, da $T^3$-Abhängigkeit. $\rightarrow$ Anteil der Elektronen messbar (siehe Folie) wegen schwächerer T-Abhängigkeit. \\
 Für hohe Temperaturen $(T \gg \Theta_D)$: Phononenbeitrag dominiert $C_{Ph} \approx 3 N_A k_B T$. \\
 Bemerkung: \\
 Modell passt gut ($\approx 25 \%$) für einfache Metalle, schlecht für Übergangsmetalle mit teilweise gefüllten d-Schalen.
@@ -268,7 +268,7 @@ Potential im Topf hat Translationssymmetrie des Gitters.
     \item[(a)] \textbf{Bloch-Wellen:}\\
     Schrödingergleichung: $-\frac{\hbar^2}{2m} \Delta \Psi(\textbf{r}) + V(\textbf{r}) \Psi(\textbf{r}) = E \cdot \Psi(\textbf{r})$\\
     mit $V(\textbf{r}) = V(\textbf{r} + \textbf{R})$ mit Gittervektor $\textbf{R}$.\\
-    Analog: Berechnung Streudichteverteilung $\rightarrow$ Fourier-Dartstellung $V(\textbf{r}) = \sum_{\textbf{G}} V_{\textbf{G}} e^{i \textbf{G} \textbf{r}}$ mit reziprokem Gittervektor $ \textbf{G}$. Die Fourierkoeffizienten $V_{\textbf{G}}$ sind charakteristisch für den Kristall. \\
+    Analog: Berechnung Streudichteverteilung $\rightarrow$ Fourier-Darstellung $V(\textbf{r}) = \sum_{\textbf{G}} V_{\textbf{G}} e^{i \textbf{G} \textbf{r}}$ mit reziprokem Gittervektor $ \textbf{G}$. Die Fourierkoeffizienten $V_{\textbf{G}}$ sind charakteristisch für den Kristall. \\
     Ansatz für Wellenfunktion: Entwicklung nach ebenen Wellen
     \begin{align}
         \Psi(\textbf{r}) &= \sum_{\textbf{k}} c_{\textbf{k}} e^{i \textbf{k} \textbf{r}} = \sum_k \Psi_{\textbf{k}}(\textbf{r}) \\
@@ -296,7 +296,7 @@ Potential im Topf hat Translationssymmetrie des Gitters.
         \Psi_{\textbf{k}} (\textbf{r}) &= \sum_{\textbf{G}} c_{\textbf{k}-\textbf{G}} e^{i(\textbf{k}-\textbf{G}) \textbf{r}}\\
         \text{oder} \qquad \Psi_{\textbf{k}} (\textbf{r}) &= \underbrace{\left[\sum_{\textbf{G}} c_{\textbf{k}-\textbf{G}} e^{-i\textbf{G} \textbf{r}}\right]}_{
             \begin{matrix}
-                \text{Fourierdarstellung einer} \\ \text{\textbf{R}-periodischen Funkion}\\
+                \text{Fourierdarstellung einer} \\ \text{\textbf{R}-periodischen Funktion}\\
                 u_{\textbf{k}} ( \textbf{r}) = u_{\textbf{k}} ( \textbf{r} + \textbf{R})
             \end{matrix}
         } e^{i \textbf{k} \textbf{r}}
@@ -314,11 +314,11 @@ Potential im Topf hat Translationssymmetrie des Gitters.
         \end{itemize}
     \end{itemize}
     \item[(b)] \textbf{Modell des leeren Gitters}\\
-    Annahme: Amplitude des periodischen Potentials so klein, dass dieser vernachlässigbar werden kann. $V_{\textbf{G}}\approx 0$, aber trotzdem Gitterperiodizität vorliegt.\\
+    Annahme: Amplitude des periodischen Potentials so klein, dass dieses vernachlässigt werden kann. $V_{\textbf{G}}\approx 0$, aber trotzdem Gitterperiodizität vorliegt.\\
     Aus (*) folgt: $ E_{\textbf{k}} = \frac{\hbar^2k^2}{2m} = \frac{\hbar^2}{2m} \left|\textbf{k}+\textbf{G}\right|^2 = E_{\textbf{k} + \textbf{G}}$ \\
     $\rightarrow$ Energieeigenwerte sind Parabeln im $\textbf{k}$-Raum, die sich um reziproken Gittervektor $\textbf{G}$ unterscheiden. \\
-    \textbf{Beispiel}: 1D Gitter mit Gitterkonstante a, ausgedehnters Zonenschema \\ %TODO Bild 5.2b
-    Reduziertes Zonenschema: Durch Verschieben der Parabeln von außerhalb in die 1. Bz (Addieren von $\textbf{G}$) \\ %TODO noch ein Bild 5.2c
+    \textbf{Beispiel}: 1D Gitter mit Gitterkonstante a, ausgedehntes Zonenschema \\ %TODO Bild 5.2b
+    Reduziertes Zonenschema: Durch Verschieben der Parabeln von außerhalb in die 1. BZ (Addieren von $\textbf{G}$) \\ %TODO noch ein Bild 5.2c
     $\rightarrow$ zu jedem \textbf{k}-Vektor gibt es mehrere $E_k$. \\
     \textbf{Beispiel}: 3D kubisch primitives Gitter
     \begin{align}
@@ -349,14 +349,14 @@ Potential im Topf hat Translationssymmetrie des Gitters.
                 sin(\frac{\pi x}{a}) & \text{für } a 
             \end{cases}
         \end{align}
-        (vergleich laufende ebene Welle ist räumlich konstant.)\\
+        (Vergleiche: laufende ebene Welle ist räumlich konstant.)\\
         Braggreflexion am Rand der 1. BZ für $k_{???} = \pm \frac{\pi}{a}$\\
             $\rightarrow$ stehende Welle mit $\rho_s$ und $\rho_a$.\\
             $\rho_{s,a}$ hat hohe/niedrige Ladungsdichte an Ort der Inonen. Gesamtenergie für $\Psi_{s,a}$ niedriger/höher\\
             $\rightarrow$ Aufspaltung in ??? \textbf{Energiebänder} durch Aufhebung der Entartung $E_{s,a}$ abgesenkt/erhöht.  
             \item[(ii)] \textbf{Berechnung der Energielücke am Rand der BZ:}\\
             \begin{itemize}
-                \item Rand der BZ ($k = \frac{\pi}{a}$) Schnittpunkt zweier Energieparabln: $E_{\textbf{k}}$ und $E_{\textbf{k}-\textbf{G}_0}$
+                \item Rand der BZ ($k = \frac{\pi}{a}$) Schnittpunkt zweier Energieparabeln: $E_{\textbf{k}}$ und $E_{\textbf{k}-\textbf{G}_0}$
                 \item Schwaches Potential: Zwei-Komponenten-Näherung: 1. und 2. BZ reicht aus.
                 \begin{align*}
                     \Psi(\textbf{r}) = c_{\textbf{k}} e^{i \textbf{k} \textbf{r}} + c_{\textbf{k}-\textbf{G}_0} e^{i(\textbf{k}-\textbf{G}_0) \textbf{r}}
@@ -405,7 +405,7 @@ Potential im Topf hat Translationssymmetrie des Gitters.
         \item Annahme: einfach kubisch, 1-atomige Basis,nächste Nacharn 
         \begin{align*}
             E_{k,i} \approx  \underset{\begin{matrix}
-                \text{Eigentwert des}\\
+                \text{Eigenwert des}\\
                 \text{isolierten Atom}           \end{matrix}}{E_i} - A_i - 2B_i[\cos(k_x a)+ \cos(k_y a) + \cos(k_z a)]
         \end{align*}
         \begin{table}[H]
@@ -416,10 +416,10 @@ Potential im Topf hat Translationssymmetrie des Gitters.
             \end{tabular}
         \end{table}
         \begin{itemize}
-            \item[(1)] Wechselwirkung der  $N_A$ Atome $\rightarrow$ Aufspaltund der Energieniveaus in $N_A$ quasikontinuirliche Zustände, aus diskreten Energien werden \textbf{Energiebänder}.
+            \item[(1)] Wechselwirkung der  $N_A$ Atome $\rightarrow$ Aufspaltung der Energieniveaus in $N_A$ quasikontinuierliche Zustände, aus diskreten Energien werden \textbf{Energiebänder}.
             \item[(2)] Mittlere Verschiebung des Energieniveaus i (Lage der Bandmitte ist $A_i$: $A_i > 0$ $\rightarrow$ Absenkung
-            \item[(3)] $A_i$ durch Potential der Nachbaratomre, nimmt zu für abnehmenden Gitterabstand a, Absenkung am stärksten für klein a.
-            \item[(4)] Btreite des Bandes ist $\alpha$ $B_i$. Für sc: Bandbreite $\pm 6 B_i$
+            \item[(3)] $A_i$ durch Potential der Nachbaratome, nimmt zu für abnehmenden Gitterabstand a, Absenkung am stärksten für kleine a.
+            \item[(4)] Breite des Bandes ist $\alpha$ $B_i$. Für sc: Bandbreite $\pm 6 B_i$
             \item[(5)] $B_i$ bestimmt durch Überlappintegral, Tiefliegende Zustände haben schmale Bänder, da Überlapp gering
             \item[(6)] In der Mitte der BZ ($\textbf{k} = 0$). $E_{k,i} (k) = E_i A_i - 6 B_i + B_i a^2k^2$
             $\rightarrow$ näherungsweise quadratische Dispersion\\
