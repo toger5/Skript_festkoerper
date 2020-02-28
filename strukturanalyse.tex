@@ -90,7 +90,7 @@ $V_0$ Integration über 1 Periode, d.h. primitive EZ.
                         \rho(\textbf{r})  \overset{!}{=}  \rho(\textbf{r} + \textbf{R}) = \sum_{h,k,l} \rho_{hkl} e^{i \textbf{G}_{hkl} (\textbf{r}+\textbf{R})} \quad \Rightarrow \quad e^{i \textbf{G}_{hkl} \textbf{R}} \overset{!}{=} 1 \\
                         \Leftrightarrow \quad \textbf{G}_{hkl} \textbf{R} = 2 \pi m \quad (m \in \mathbb{Z})
                     \end{align*}
-                    Für beliebige Koeffizienten $ \textbf{n}_1, \textbf{n}_2, \textbf{n}_3$ von $\textbf{R}$ und $h,k,l$ von $G_{hkl}$ gilt dies nur  falls $\textbf{a}_i\cdot \textbf{b}_j > 2\pi \delta_{ij} (i,j = 1,2,3)$
+                    Für beliebige Koeffizienten $ \textbf{n}_1, \textbf{n}_2, \textbf{n}_3$ von $\textbf{R}$ und $h,k,l$ von $G_{hkl}$ gilt dies nur  falls $\textbf{a}_i\cdot \textbf{b}_j = 2\pi \delta_{ij} (i,j = 1,2,3)$
                 \item[$\rightsquigarrow$] Damit lauten die Basisvektoren des reziproken Gitters:
                 \begin{align*}
                     \textbf{b}_1 &= \frac{2 \pi}{V_0} ( \textbf{a}_2 \times \textbf{a}_3)\\
@@ -114,7 +114,7 @@ $V_0$ Integration über 1 Periode, d.h. primitive EZ.
               \begin{tabular}{ccc}
                   \hline
                   Beispiele & Real                & Reziprok                                                            \\ \hline
-                  1D        & o-o-o (Distanz = a) & o-o-o  (Distanz $= b \frac{2\pi}{a}$)                                 \\
+                  1D        & o-o-o (Distanz a) & o-o-o  (Distanz $b =  \frac{2\pi}{a}$)                                 \\
                   2D        & vgl Folie \#4       & $\textbf{b}_1 \bot \textbf{a}_2$ und $\textbf{b}_2 \bot \textbf{a}_1$ \\
                   3D        & SC mit a            & SC mit $b=\frac{2\pi}{a}$                                             \\
                             & bcc                 & fcc                                                                   \\
@@ -182,10 +182,10 @@ $V_0$ Integration über 1 Periode, d.h. primitive EZ.
                         & =\frac{2 \pi}{V_0}\left[h(\textbf{a}_2\times \textbf{a}_3) + k(\textbf{a}_3\times \textbf{a}_1) + l(\textbf{a}_1\times \textbf{a}_2)\right]
                     \end{align*}
                     vgl. Normalvektor auf $(hkl)$ \textbf{n}\\
-                    $e^{i \textbf{G}_{nlk}\textbf{R}}$ und also hier $\textbf{n} e^{i \textbf{n} \textbf{R}} \overset{!}{=}1$ folgt $\textbf{n} \parallel \textbf{G}_{hkl}$.
+                    $e^{i \textbf{G}_{hkl}\textbf{R}}$ und also hier $\textbf{n} e^{i \textbf{n} \textbf{R}} \overset{!}{=}1$ folgt $\textbf{n} \parallel \textbf{G}_{hkl}$.
               \item[2.] Der Abstand zweier benachbarter Netzebenen im realen Raum ist durch den Betrag des kürzesten reziproken Gittervektors $\left| \textbf{G}_{nlk}^{min} \right|$ bestimmt:
-              $$d_{hkl} = \frac{2 \pi}{\left| \textbf{G}_{nlk}^{min} \right|} $$
-              Begründung: Für $\left| \textbf{G}_{nlk}^{min} \right| = \frac{2 \pi}{d_{hkl}}$ ist $e^{i \textbf{G}_{nlk}^{min} \textbf{R}} = 1$ mit $\lambda = 2 \pi \left| \textbf{G}_{nlk}^{min} \right|^{-1} = d_{hkl}$
+              $$d_{hkl} = \frac{2 \pi}{\left| \textbf{G}_{hkl}^{min} \right|} $$
+              Begründung: Für $\left| \textbf{G}_{hkl}^{min} \right| = \frac{2 \pi}{d_{hkl}}$ ist $e^{i \textbf{G}_{hkl}^{min} \textbf{R}} = 1$ mit $\lambda = 2 \pi \left| \textbf{G}_{hkl}^{min} \right|^{-1} = d_{hkl}$
           \end{itemize}
 \end{itemize}
 
@@ -216,7 +216,7 @@ Mit Kap. \ref{kap:3_2}:
 \begin{align*}
     \left| \mathcal{A} ( \Delta \textbf{k}) \right| ^2 = \begin{cases}
         0 & \text{für } \Delta \textbf{k} \neq \textbf{G}\\
-        \left| \rho_hkl\right|^2 \cdot V^2 &  \text{für } \Delta \textbf{k} = \textbf{G}_{(hkl)}
+        \left| \rho_ {hkl}\right|^2 \cdot V^2 &  \text{für } \Delta \textbf{k} = \textbf{G}_{(hkl)}
     \end{cases}
 \end{align*}
 \begin{itemize}
@@ -269,7 +269,7 @@ Mit Kap. \ref{kap:3_2}:
     \begin{align*}
         \textbf{r} = \textbf{R}_n + \textbf{r}_\alpha + \textbf{r}'
     \end{align*}
-    $\textbf{R}_n$: Ursprung EZ, $\textbf{r}_\alpha$: $\alpha$-tes Atom, $\textbf{r}'$: Ortsvektor von $\alpha$-tem Atom.\\
+    $\textbf{R}_n$: Ursprung EZ, $\textbf{r}_\alpha$: $\alpha$-tes Atom, $\textbf{r}'$: Ortsvektor.\\
     mit:
     \begin{align*}
         \textbf{r}_\alpha = u_\alpha \textbf{a}_1 + v_\alpha \textbf{a}_2 + w_\alpha \textbf{a}_3
@@ -296,8 +296,8 @@ Mit Kap. \ref{kap:3_2}:
             \item[(ii)] CsCl Gitter\\ $\text{Kubisch primitiv mit 2-atomiger Basis} \qquad \textbf{r}_{Cs}= \left(\begin{array}{c} 0 \\ 0 \\ 0 \end{array}\right) \textbf{r}_{Cl} = \left(\begin{array}{c} 1/2 \\ 1/2 \\ 1/2 \end{array}\right)$ 
             \begin{align*}
                 S_{hkl} = \begin{cases}
-                    f_{Cs} & \text{für $h+k+l$ gerade}\\
-                    f_{Cl} & \text{für $h+k+l$ ungerade}
+                    f_{Cs} + f_{Cl} & \text{für $h+k+l$ gerade}\\
+                    f_{Cs} - f_{Cl} & \text{für $h+k+l$ ungerade}
                 \end{cases}
             \end{align*}
 
